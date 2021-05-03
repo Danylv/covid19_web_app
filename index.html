@@ -17,7 +17,7 @@
       
      <div class="container">
          <div class="row justify-content-md-center">
-             <div class="col-lg-9">
+             <div class="col-lg-9 col-sm-12">
              <form name="app" id="app">
                  
                  <div class="period">
@@ -27,12 +27,13 @@
                  <button type="button" class="section-table"><a href="/index.html">Таблица</a></button><button type="button" class="section-graphic">График</button>
                  
                  <div class="main-app">
-                     <div class="search-filter-bar">
+                     <div class="row search-filter-bar">
+                         <div class="col-lg-4 col-sm-12">
+                         <input type="text" id="search-country" class="search-country" placeholder="Поиск страны..."><button type="button" class="search-button"><i class="fas fa-search"></i></button>
+                         </div>
                         
-                         <input type="text" id="search_in" class="search-field" placeholder="Поиск страны..."><button type="button" class="search-button"><i class="fas fa-search"></i></button>
-                         
-                        
-                         <select name="filter-select" id="filter-select" class="filter-select">
+                         <div class="col-lg-3 col-sm-12">
+                         <select name="filter-select" id="search-filter-select" class="filter-select">
                               <option value="1">Фильтрация по количеству случаев</option>
                               <option value="2">Фильтрация количеству смертей</option>
                               <option value="3">Фильтрация по общему количеству случаев</option>
@@ -40,11 +41,12 @@
                               <option value="5">Фильтрация по количеству случаев на 1000 населения</option>
                               <option value="6">Фильтрация по количеству смертей на 1000 населения</option>
                         </select>
+                        </div>
                         
-                        
+                        <div class="col-lg-5 col-sm-12">
                         <input type="text" id="input-min" name="input-min" class="search" placeholder="Значение от">                   
                         <input type="text" id="input-max" name="input-max" class="search" placeholder="Значение до">
-                        
+                         </div>
                      </div>
                      <div class="align-right">
                      
